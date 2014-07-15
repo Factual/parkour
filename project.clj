@@ -90,7 +90,7 @@
              :hadoop-cdh4 [:cloudera ;; For hadoop-* *-*cdh4*
                            :avro-cdh4
                            {:dependencies
-                            [[org.apache.hadoop/hadoop-core "2.0.0-cdh4.3.0"]
+                            [[org.apache.hadoop/hadoop-client "2.0.0-cdh4.3.0"]
                              [org.apache.hadoop/hadoop-common "2.0.0-cdh4.3.0"]]}]
              :avro-hadoop2 {:dependencies
                             [[org.apache.avro/avro-mapred "1.7.5"
