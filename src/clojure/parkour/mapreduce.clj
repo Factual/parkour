@@ -319,7 +319,7 @@ See also: `partfn`."
 
 (defn ^:private taid
   "Return `TaskAttemptID` for `x` when provided, or a new `TaskAttemptID`."
-  ([] (TaskAttemptID. "parkour" (int 0) false (int 0) (int 0)))
+  ([] (TaskAttemptID/forName "attempt_parkour0_0003_m_000005_0"))
   ([x] (-taid x)))
 
 (defn tac
