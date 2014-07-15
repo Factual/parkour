@@ -1,8 +1,11 @@
-(defproject com.damballa/parkour "0.5.4"
+(defproject factual/parkour "0.5.4-SNAPSHOT"
   :description "Hadoop MapReduce in idiomatic Clojure."
   :url "http://github.com/damballa/parkour"
   :license {:name "Apache License, Version 2.0"
             :url "http://www.apache.org/licenses/LICENSE-2.0.html"}
+  :repositories {"factual" "http://maven.corp.factual.com/nexus/content/groups/public/"
+                 "snapshots" {:url      "http://maven.corp.factual.com/nexus/content/repositories/snapshots/"
+                              :snapshot {:update :always}}}
   :global-vars {*warn-on-reflection* true}
   :source-paths ["src/clojure"]
   :java-source-paths ["src/java"]
@@ -87,8 +90,8 @@
              :hadoop-cdh4 [:cloudera ;; For hadoop-* *-*cdh4*
                            :avro-cdh4
                            {:dependencies
-                            [[org.apache.hadoop/hadoop-core "2.0.0-mr1-cdh4.1.2"]
-                             [org.apache.hadoop/hadoop-common "2.0.0-cdh4.1.2"]]}]
+                            [[org.apache.hadoop/hadoop-core "2.0.0-cdh4.3.0"]
+                             [org.apache.hadoop/hadoop-common "2.0.0-cdh4.3.0"]]}]
              :avro-hadoop2 {:dependencies
                             [[org.apache.avro/avro-mapred "1.7.5"
                               :classifier "hadoop2"]]}
